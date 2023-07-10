@@ -1,0 +1,57 @@
+body{
+    font-family: 'Manrope', sans-serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Roboto Slab', serif;
+background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(105,105,130,1) 0%, rgba(0,212,255,1) 88%);
+}
+
+#navbar{
+    height: 80px;
+    font-size: 15px;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    column-gap: 80px;
+    margin-top:70px;
+}
+
+.card{
+    height: 420px;
+    box-shadow: 10px 10px 2px lightblue;
+    border-radius: 20px;
+}
+.card-body{
+    margin-top: 4px;
+    font-size: 20px;
+}
+
+#acard-img{
+    width: 50%;
+    margin-left: 55px;
+}
+#wcard-img{
+    width: 50%;
+    margin-left: 55px;
+}
+#temp{
+    margin-top: 28px;
+    margin-left: 9px;
+    margin-bottom: 32px;
+}
+#search_btn{
+    border-color: white;
+    color: black;
+}
+#search_btn:hover{
+    background-color: lightblue;
+    border-color: lightblue;
+}
+
+#w-heading{
+    text-shadow: 3px 3px 2px lightblue;
+}
