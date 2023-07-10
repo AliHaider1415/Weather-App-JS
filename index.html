@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Weather App</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300;400&family=Montserrat:ital,wght@0,300;1,300&family=Roboto+Slab:wght@500&display=swap');
+      </style>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="weather.css" />
+  </head>
+  <body>
+    <nav id = "navbar" class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="weather-app.png" width="30" height="31" />
+        </a>
+
+        <a class="navbar-brand" href="#" style = "font-size: 26px; text-shadow: 2px 2px skyblue;"><b>Weather App</b></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent" style = "margin-top: 5px; margin-left: 40px;">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+           
+          </ul>
+          <form class="d-flex" role="search">
+            <input
+              id="city"
+              class="form-control me-2"
+              type="search"
+              placeholder="Enter City Name"
+              aria-label="Search"
+              style = "height: 36px; width: 188px;"
+            />
+            <button id="search_btn" class="btn btn-outline-success">
+              Search
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <h1 id = "w-heading" style="text-align: center; margin-top: 50px; margin-bottom: 24px">
+      
+    </h1>
+
+    <div class="container">
+      <div class="card" style="width: 22rem">
+        <div class="card-body">
+            <img id = "wcard-img" src="" alt="">
+          <h3 id="temp" class="card-title">Temperature is</h3>
+
+          <ul class="list-group list-group-flush">
+            <li id="condition" class="list-group-item">Condition:</li>
+            <li id="humidity" class="list-group-item">Humidity:</li>
+            <li id="wind_speed" class="list-group-item">Wind Speed:</li>
+          </ul>
+        </div>
+      </div>
+      <div class="card" style="width: 22rem">
+        <div class="card-body">
+            <img id = "acard-img" src="" alt="">
+          <h3 id="temp" class="card-title">Wind Information:</h3>
+        
+        <ul class="list-group list-group-flush">
+          <li id="wind_dir" class="list-group-item">Wind Direction:</li>
+          <li id="wind_deg" class="list-group-item">Wind Degree:</li>
+          <li id="air_press" class="list-group-item">Air Pressure:</li>
+        </ul>
+    </div>
+      </div>
+    </div>
+
+    <script src="weather.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
